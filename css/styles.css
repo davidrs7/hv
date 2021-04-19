@@ -1,0 +1,35 @@
+ 
+.photoProfile{
+    width: 100px; 
+    height: 120px;
+    border-radius: 2rem; 
+    image-rendering: auto;   
+}
+
+.iconHability{
+  width: 10%;
+}
+
+p {
+    text-align: justify;  
+}
+html, body {
+    height: 100%;
+  }
+  
+.lineaCorta {
+  width:30%; 
+  margin: auto;
+   
+}
+
+.titulosAtenuados{
+   color: gray;
+   text-align: center;
+}
+
+.skilltd{
+  padding-right: 10px; 
+  text-align: center; 
+}
+  
