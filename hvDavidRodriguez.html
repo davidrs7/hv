@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>David Rodriguez CV</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+<link href="./css/styles.css"  rel="stylesheet"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="./js/html2canvas.js"></script>
+<script src="./js/html2pdf.bundle.js"></script>
+<script src="./js/jspdf.min.js"></script>
+<script src="./js/hv.js"></script>
+</head>
+ 
+<body>  
+  <div class="container mt-5" id="form1">
+       <div class="row"> 
+        <div class="col-md-auto">
+        <img src="./images/fotoPrefil.jpg" id="imgFotoPerfil" class="img-thumbnail photoProfile" >
+         </div>
+         <div class="col-md-auto">
+          <h5><small>David Leonardo Rodriguez Rivera</small></h5>
+          <h5><small>Ingeniero de sistemas</small></h5>
+          <h5> <i class="bi bi-telephone"></i><small> +57 3124379303</small></h5>
+          <h5> <i class="bi bi-envelope"></i><small> davidrodriguezrivera0@gmail.com</small></h5> 
+          <input type="button" class="btn btn-primary" id="BtnGenera" onclick="GeneraReportePDF()" value="Descargar PDF"  /> 
+         </div> 
+       </div>   
+        <hr>
+        <br>
+               
+       <!--<a href="index.html#divPerfilProfesional">Perfil profesional</a> -->
+
+        <div id="divPerfilProfesional"> 
+          <h5 class="titulosAtenuados" >Perfil Profesional</h5>
+          <hr class="lineaCorta"> 
+          <br>
+          <h5>Desarrollador de software</h5>
+          <p>Amplios conocimientos en desarrollo de software y manejo de sistemas de  información.  Habilidades:        
+            </p>  
+           <div class="container">
+              <table>
+                <tr > 
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> html5 + Css3 + Js</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Angular</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Java Sping boot</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> .Net(front y backend)</td>  
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"></i> Creación e integración de web services (api,soap,rest), formatos: Json, xml</td>
+                 </tr> 
+                  <tr>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"></i> BD relacionales</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"></i>  BD no relacionales</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Sonarqube</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Docker</td>
+                  <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Repositorios(git,github,SVN tortoise, Team fundation)</td>
+
+                 </tr>
+         
+              </table>
+
+           </div>
+ 
+
+        </div>
+        <br>
+        <div id="divExperiencia">
+          <h5 class="titulosAtenuados">Experiencia</h5>
+          <hr class="lineaCorta">
+          <br>
+          <h5>Ingeniero consultor<h6> db-system (septiembre 2018-actualmente)</h6></h5>
+          <p>Desarrollo, mantenimiento y despligue de Software bajo tecnologias .Net (front y backend) y java , bases de
+            datos Oracle PL/SQL y sql server(diseño,optimización y administración), web services( SOAP y API REST),
+            soporte en integraciones IBM con Datapower y broker. Trabajo bajo metodologias agiles (srcrum). Proyectos:
+            - Sodimac - IBM          
+            </p> 
+            <br>
+            <br>
+            <h5>Analista sla ii<h6> Stefanini Mayo 2018 - Septiembre 2018</h6></h5>
+          <p>
+            Análisis, desarrollo,mantenimiento y soporte de sistemas de información con grandes datos y transacciones en el sector financiero. Optimización,arquitectura y mantenimiento de la base de datos.               
+          </p> 
+          <br>
+            <h5>Desarrollador junior<h6> Heon Mayo 2015 - Mayo 2018</h6></h5>
+          <p>Desarrollo y mantenimiento de software para empresas y sistemas de salud (actualmente plataforma de salud de ecopetrol) manejo de buenas practicas y amplios conocimientos en desarrollo 
+            y manejo-administración de bases de datos, Conocimientos en programación y soporte técnico IT; cursos en programación html5 , bootstrap , php, MySql, sql server, MVC,JS,c#,C++ , .NET.
+            </p>        
+            <br>
+            <h5>Analista en desarrollo<h6> Heon Mayo 2015 - Mayo 2018</h6></h5>
+          <p>ANALISTA PROGRAMADOR ENCARGADO DE SOLUCIONAR INCONVENIENTES PRESENTADOS EN LA PLATAFORMA TECNOLÓGICA QUE DESARROLLA EL EQUIPO DE TRABAJO UTILIZANDO .NET JAVASCRIPT JQUERY HTML5 CSS3 Y BASE DE DATOS SQL SERVER 2008. DESARROLLO DE NUEVOS REQUERIMIENTOS. 
+            Conocimientos en programación y soporte técnico IT; cursos en programación html5 ,(ccs3) , php, MySql, 
+            SQL SERVER, MVC,JS,c#,C++ , desarrollo .NET.
+            </p> 
+            <br>
+            <h5>Technical support<h6> Microsoft (teleperformance ) Abril 2014 - Abril 2015</h6></h5>
+          <p>Soluciones a nivel de soporte técnico para los productos onLine microsoft por medio de herramientas de desarrollo de software como Online Services, consola, .Net , visual studio ,solucion de nuevos problemas con recursividad por diferentes canales de contacto, aprendizaje constante.  </p> 
+        </div>
+        <br>
+        <br>
+        <div id="estudiosDiv">
+          <h5 class="titulosAtenuados">Estudios</h5>
+          <hr class="lineaCorta">
+          <br>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h4 class="card-title"><i class="bi bi-bookmark-check-fill"> Ingeniero de Sistemas</i></h4>
+                  <p class="card-text">Corporacion Universitaria Remington Enero 2011 - Diciembre 2017.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Técnico en administración de sistemas</i> </h5>
+                  <p class="card-text">Corporación iberoamericana de estudios cies Enero 2011 - Junio 2015.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Programación en Java</i> </h5>
+                  <p class="card-text">Politecnico de Colombia. MEDELLÍN - 28 DE MARZO DE 2020 AL 01 DE MAYO DE 2020</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Arquitectura y mantenimiento de software</i> </h5>
+                  <p class="card-text">Universidad remington Julio 2017 - Octubre 2017.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Blockchain nivel intermedio</i> </h5>
+                  <p class="card-text"> Alcaldia mayor de bogota. Octubre 2018 - Noviembre 2018</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Inteligencia artificial nivel intermedio</i> </h5>
+                  <p class="card-text"> Alcaldia mayor de bogota. Octubre 2018 - Noviembre 2018
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"> 
+                <div class="card-body">
+                  <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Desarrollo Web y Móvil con HTML5. y CSS3.</i> </h5>
+                  <p class="card-text"> Ministerio de tecnologías de la información y las comunicaciones Septiembre 2014 - Octubre 2014
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <br>
+        <div id="divIdiomas">
+          <h5 class="titulosAtenuados">Idiomas</h5>
+          <hr class="lineaCorta">
+          <br>
+          <h5><i class="bi bi-file-earmark-check"> </i> Ingles<small> 60%</small></h5>
+        </div>
+     <br>
+     <br>
+      <!--  <div id="PryRealizados">
+          <h5 class="titulosAtenuados">Pryectos Realizados</h5>
+          <hr class="lineaCorta">
+          <br>
+        <div class="card">
+            <h5 class="card-header">Busos Blinders</h5>
+            <div class="card-body">
+              <h5 class="card-title">Sistema que permite validar la disponibilidad de un inventario</h5>
+              <h6>Teconologias usadas:</h6>
+              <ul>
+                <li>Angular 11</li>
+                <li>TypeScript</li>
+                <li>Java Spring boot</li>
+                <li>Jpa-Hibernate</li>
+                <li>Postgres</li> 
+              </ul> 
+              <input type="button" class="btn btn-primary" value="Ver pagina" onclick="window.open('https://busosblinders.herokuapp.com/inventarios')" />
+            </div>
+          </div>
+        </div> -->
+  </div>
+ 
+</body>
+
+</html>
