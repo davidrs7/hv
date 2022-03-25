@@ -16,20 +16,183 @@
   <script src="./js/hv.js"></script>
 </head>
  
-<body>
+<body onload="firstLoad()" id="bodyHv">
   
-  <div class="container mt-5" id="form1">
-       <div class="row"> 
-        <div class="col-md-auto">
-        <img src="./images/fotoPrefil.jpg" id="imgFotoPerfil" class="img-thumbnail photoProfile" >
+  
+  <div class="container mt-5" id="formEnglish">
+    <div class="row"> 
+     <div class="col-md-2">
+     <img src="./images/fotoPrefil.jpg" id="imgFotoPerfilEn" class="img-thumbnail photoProfile" >
+      </div>
+      <div class="col-md-6">
+       <h5><small>David Leonardo Rodriguez Rivera</small></h5>
+       <h5><small>Software Engineer</small></h5>
+       <h5> <i class="bi bi-telephone"></i><small> +57 3124379303</small></h5>
+       <h5> <i class="bi bi-envelope"></i><small> davidrodriguezrivera0@gmail.com</small></h5> 
+      </div> 
+      <div class="col-md-4">        
+       <input type="button" class="btn btn-primary" id="BtnGeneraEn" onclick="GeneraReportePDFEnglish()" value="Descargar PDF"  /> 
+       <input type="button" class="btn btn-primary" id="BtnIdiomaEn" onclick="cambiarIdioma(2);" value="Spanish"/>
+      </div>
+    </div>   
+     <hr>
+     <br>
+             
+     <div id="divPerfilProfesional"> 
+       <h5 class="titulosAtenuados" >Profile</h5>
+       <hr class="lineaCorta"> 
+       <br>
+       <h5>Software developer</h5>
+       <p> knowledge in software development and management of information systems. Skills:       
+         </p>  
+        <div class="container">
+           <table>
+             <tr > 
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> html5 + Css3 + Js</td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Angular</td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Java Sping boot</td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> .Net(front y backend)</td>  
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"></i> Develop and integrate to web services (api,soap,rest) - Json, xml</td>
+              </tr> 
+               <tr>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"></i> relational data base</td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"></i>  non-relational database </td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Sonarqube</td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Docker</td>
+               <td class="skilltd"><i class="bi bi-check-circle skilltd"> </i> Repositories(git,github,SVN tortoise, Team fundation)</td>
+
+              </tr>
+      
+           </table>
+
+        </div>
+
+
+     </div>
+     <br>
+     <div id="divExperiencia">
+       <h5 class="titulosAtenuados">Experience</h5>
+       <hr class="lineaCorta">
+       <br>
+       <h5>Software technical leader<h6> Sophos solutions(August 2021-Actually)</h6></h5>
+       <p>
+        Technical leader of software teams for financial institution projects. Management of the team at a technical level, infrastructure, fulfillment of objectives and project management. Technological .net Core and .net framework (Apis, web services) for backend... angular at the frontend level, oracle data base, sql server data base. Application of agile methodology. </p>  
+         <br>
+       <h5>Consulting engineer<h6> db-system (September 2018-August 2021)</h6></h5>
+       <p>Development, maintenance and deployment of Software under .Net technologies (front and backend) and java, databases
+                 Oracle PL/SQL and sql server data (design, optimization and administration), web services (SOAP and API REST),
+                 support in IBM integrations with Datapower and broker. I work under agile methodologies (srcrum). Projects:
+                 - Sodimac - IBM      
+         </p>  
+         <br>
+         <h5>SLA analyst II<h6> Stefanini May 2018 - September 2018</h6></h5>
+       <p>
+        Analysis, development, maintenance and support of information systems with big data and transactions in the financial sector. Optimization, architecture and maintenance of the database.</p> 
+       <br>
+         <h5>Software developer<h6> Heon May 2015 - May 2018</h6></h5>
+       <p>Development and maintenance of software for companies and health systems (currently ecopetrol's health platform) management of good practices and extensive knowledge in development
+        and management-administration of databases, knowledge in programming and IT technical support; courses in html5 programming, bootstrap, php, MySql, sql server, MVC, JS, c#, C++, .NET.</p>        
+         <br>
+         
+         <h5>Technical support<h6> Microsoft (teleperformance ) April 2014 - April 2015</h6></h5>
+       <p>Solutions at the technical support level for microsoft online products through software development tools such as Online Services, console, .Net, visual studio, solution of new problems with recursion through different contact channels, constant learning.  </p> 
+     </div>
+     <br>
+     <br>
+     <div id="estudiosDiv">
+       <h5 class="titulosAtenuados">Studies</h5>
+       <hr class="lineaCorta">
+       <br>
+       <div class="row row-cols-1 row-cols-md-2 g-4">
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h4 class="card-title"><i class="bi bi-bookmark-check-fill"> Ingeniero de Sistemas</i></h4>
+               <p class="card-text">Corporacion Universitaria Remington January 2011 - December 2017.</p>
+             </div>
+           </div>
          </div>
-         <div class="col-md-auto">
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Técnico en administración de sistemas</i> </h5>
+               <p class="card-text">Corporación iberoamericana de estudios cies January 2011 - July 2015.</p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Programación en Java</i> </h5>
+               <p class="card-text">Politecnico de Colombia. MEDELLÍN - March 2020 - May DE 2020</p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Arquitectura y mantenimiento de software</i> </h5>
+               <p class="card-text">Universidad remington July 2017 - October 2017.</p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Blockchain nivel intermedio</i> </h5>
+               <p class="card-text"> Alcaldia mayor de bogota. October 2018 - November 2018</p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Inteligencia artificial nivel intermedio</i> </h5>
+               <p class="card-text"> Alcaldia mayor de bogota. October 2018 - November 2018
+               </p>
+             </div>
+           </div>
+         </div>
+         <div class="col">
+           <div class="card"> 
+             <div class="card-body">
+               <h5 class="card-title"><i class="bi bi-bookmark-check-fill"> Desarrollo Web y Móvil con HTML5. y CSS3.</i> </h5>
+               <p class="card-text"> Ministerio de tecnologías de la información y las comunicaciones Septiembre 2014 - Octubre 2014
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>  
+     </div>
+     <br>
+     <div id="divIdiomas">
+       <h5 class="titulosAtenuados">Languages</h5>
+       <hr class="lineaCorta">
+       <br>
+       <h5><i class="bi bi-file-earmark-check"> </i> English<small> 60%</small></h5>
+       <h5><i class="bi bi-file-earmark-check"> </i> Spanish<small> 100%</small></h5>
+     </div>
+  <br>
+  <br>
+
+</div>
+
+
+  <div class="container mt-5" id="formSpanish">
+       <div class="row"> 
+        <div class="col-md-2">
+        <img src="./images/fotoPrefil.jpg" id="imgFotoPerfilSp" class="img-thumbnail photoProfile" >
+         </div>
+         <div class="col-md-6">
           <h5><small>David Leonardo Rodriguez Rivera</small></h5>
           <h5><small>Ingeniero de sistemas</small></h5>
           <h5> <i class="bi bi-telephone"></i><small> +57 3124379303</small></h5>
-          <h5> <i class="bi bi-envelope"></i><small> davidrodriguezrivera0@gmail.com</small></h5> 
-          <input type="button" class="btn btn-primary" id="BtnGenera" onclick="GeneraReportePDF()" value="Descargar PDF"  /> 
-         </div> 
+          <h5> <i class="bi bi-envelope"></i><small> davidrodriguezrivera0@gmail.com</small></h5>  
+         </div>  
+         <div class="col-md-4">
+          <input type="button" class="btn btn-primary" id="BtnGeneraSp" onclick="GeneraReportePDF()" value="Descargar PDF"  /> 
+          <input type="button" class="btn btn-primary" id="BtnIdiomaSp" onclick="cambiarIdioma(1);" value="English"/> 
+         </div>
        </div>   
         <hr>
         <br>
